@@ -74,3 +74,37 @@ I used steel 45mm angle brackets to mount the melamines together. They were mere
 Originally, I thought the hardest problem would be to accurately pick the drilling points for the button and joystick holes. This turned out to be the easiest part :) . I took the design from Fusion 360, exported it to .dxf, loaded it in [QCAD](https://qcad.org/en/) and printed it across several A4 pages with join marks. I then put everything together on top of the control panel to mark the drilling points.
 
 ![drilling](img/drilling.png)
+
+To open the holes I got a 28mm (to match the button diameter) flat drilling bit. In retrospect, I should have gotten a forstner bit instead :( .
+
+![drillbit](img/drillbit.jpeg)
+
+This bit did not bode well with the particle nature of the wood and the amateurism of yours truly. As a result, most holes where OK, but, there was severe damaging of the control panel with chunks being ripped apart. Also, due to the imperfect angle induced by freeform drilling the holes were more elliptic than circular. This was hard to pick with the naked eye and was only revealed when trying to fit the buttons in. I had to do some serious repairing and overpaint to bring the whole thing in a presentable state once again. Repainting went directly against the design choice of relying on the acrylic finish.
+
+Apart from the hole issues, there was some t-mold slot cutting and sanding that went well :) .
+
+![controlpanel](img/control_panel.jpg)
+
+I will be redoing the control panel carpentry, so, more on that to come.
+
+On the electronics side, I installed all the parts and the wiring. I also installed three hinges to allow for the control panel to be opened in a well structured fashion. I feared I needed some kind of lock so that the door would not open accidentally, but I was glad to realize that it would be an overkill, as the weight of the door itself and the pressure being applied during gaming would never allow it. The only requirement is that the hinges are sturdy so that there is no planar motion.
+
+![joysticks_installed](img/joysticks_installed.jpg) 
+
+### Speakers
+
+I already knew which spearers I was going to use. I had a spare Creative T5400 lying around. I had already used another one in my first arcade (2.1 mode) and I was super happy, so, same recipe
+
+![speakers](img/speakers.jpeg)
+
+What did change since then was that I ramped up on the 3D modelling skils and I also got a 3D printer in the meantime. So, given some very nice 3D model of the speakers, I designed routing templates and holders for the speakers. The nice thing with these speakers is that the cloth in front is mounted through 4 insert slots to the main body and can come apart. So I designed to actually bring the speaker surface between them and install in the cabinbet. Some 3D printing and routing later I ended up with the following result.
+
+![speaker_installation](img/speaker_installation.jpg)
+
+I would then drill holes, with a new template, to install the cloth piece.
+
+### Pre-integration
+
+With every part in place so far, I was able to check the whole thing out.
+
+![complete](img/complete.jpg)
