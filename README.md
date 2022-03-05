@@ -24,3 +24,53 @@ The very basic ingredients are:
 Starting from the design requirement of being able to display on a CRT, I went for the [Raspberry Pi](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/) 3 to pair with [Pi2Scart](http://pi2jamma.info/pi2scart). The latter dictated the selection on the former, as no other combination is reported to work as well with no significant effort. I wasn't worried the horsepower might not be enough, because, the design choice to go for the oldies keeps everything within boundaries, including computational ones. The only exception I've run into so far is the other game I love, [Run and Gun 2](https://en.wikipedia.org/wiki/Run_and_Gun_II), which takes some powerful hardware to emulate nicely (not even rpi4 can handle it smoothly).
 
 Apart from the H/W, it also takes the right kind of software to make ends meet. I've settled for the [Retropie CRT Edition](https://github.com/krahsdevil/Retropie-CRT-Edition) project, which, in my short experience, is the most well-behaved and predictable set-up. It's retropie with some hooks and python magic on top to automatically handle a) databasing CRT display requirements of games b) enforcing them in a dynamic fashion, so that no hard choices need to be made across.
+
+## The CRT
+
+It's been a while since I started this campaign to find the right CRT. Despite the abundance of CRTs, as they constituted the state of the art, not so many decades ago, there are several issues or requirements that have made this task a difficult one:
+- **People have forgotten about them:** I've spent so much time searching for them that I was almost infuriated whenever some friend of acquaintance came to me with "why didn't you tell me earlier/I'd forgotten that ... I have one lying around".
+- **The TV needs to be large:** The original NBA JAM cabinet featured a 25" CRT monitor. When you're that close to the monitor, this size is OK, so, this constituted the low threshold in my search. It turns out not so many people have large CRTs to spare. A lot of them have 21" or less.
+- **The TV needs to be in a good shape:** There are conflicting requirements. I was looking for something old that is in good shape. Good shape means that it can be successfully driven by my rpi3 (I was using the CRT tools in the image to test each time I considered a CRT candidate), it is lively enough to show that there are at least 5 good years in its parts (the capacitors, which are the main culprit, and the emitter, which if dead requires the questionable supercharge boost), its display geometry isn't awful (CRTs are notorious for having imperfect display) and there is the ability to fine tune the geometry through some kind of service mode.
+- **The tube needs to be curved:** Latest tech in CRTs led to flat screens, which is a great technological feat given the conic nature of the projection, but has nothing to do with my experience with the oldies and the obviously curved monitors.
+
+This process has led to final selection, but, also, to several CRTs lying around in my basement. The one that made the cut was the Thomson 28DG17E. It is a 28" TV, with stereo speakers that are thin enough to not requiring to rip the chasis apart in order to fit to the cabinet, is lively and curvy (not as curvy as I would have liked, but curvy still), and has a service menu for the geometry (to which I still have no access to this day because I lack the remote control).
+
+![crt](img/crt.jpg)
+
+## Joysticks
+
+So far I've had the two extremes in the spectrum of joystick H/W. On the one hand I have the [Tankstick](https://shop.xgaming.com/products/x-arcade-tankstick-trackball-usb-included), which is awesome (sturdy, clicky and comfortable). I won't elaborate on the other extreme. I was looking for something that looked like the original selection by Midway and run into the [IL series](https://www.smallcab.net/bat-top-c-30_91_226_302.html) which I bought from [smallcab](http://smallcab.net/). The arcade was going to be a 4 seater, so I needed 4 sets. I got all colors and matching buttons. Interestingly, the manufacturer (IL) pitches the H/W as being a Midway rip-off but better made. I don't know whether it's better made (too long ago to remember), but, the quality is top! And, they are visually indiscernible to the originals.
+
+![joystick](img/joystick.jpg)
+
+## The plans
+
+The baseline was some Midway adoptions I found online.
+
+![plans](img/plans.png)
+
+From these plans, I tried to preserve the angles and fine tune all the rest to fit the equipment I was going to put in. After hours of toying around in Fusion 360, I ended up to the following model.
+
+![model](img/model.png)
+
+You might see that everything is planned out, except for the front that covers the TV and the back. More on that next. The TV would be supported by a frame that had the right angle and a block to stop the TV from sliding. The TV appears floating, but this is only concept art. The angle brackets displayed are actually the ones I used for the assembly, but, perhaps on the exact locations shown. The whole cabinet would be on top of some rollers, to facilitate moving it. This is a lesson I learned the hard way.
+
+## Putting it all together
+
+### Wood parts
+
+The whole cabinet would fit in a 1850mm x 3300mm sheet of particle board with black melamine coating. Most of the cabinetry is straight cuts, so, most of the parts where cut out during the order of the sheet. The tricky parts were the sides, i.e. the two tall parts and the angled sides of the control panel. For these parts I employed the services of a local CNC routing shop.
+
+![wood_parts](img/wood_parts.jpg)
+
+### Joinery
+
+I used steel 45mm angle brackets to mount the melamines together. They were merely to hold the thing together. They do not suffice to make the build sturdy. But that would come along with the wooden frame. For the wooden frame the parts were cut to length and correct angles and were joined with wood glue and long screws. Then, the frame and the melamines where attached to each other with some more steel angle brackets.
+
+![assembly](img/assembly.jpg)
+
+### The control panel
+
+Originally, I thought the hardest problem would be to accurately pick the drilling points for the button and joystick holes. This turned out to be the easiest part :) . I took the design from Fusion 360, exported it to .dxf, loaded it in [QCAD](https://qcad.org/en/) and printed it across several A4 pages with join marks. I then put everything together on top of the control panel to mark the drilling points.
+
+![drilling](img/drilling.png)
