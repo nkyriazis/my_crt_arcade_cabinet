@@ -140,3 +140,5 @@ The initial effort was to print templates and jigsaw them. However, my jigsaw-fu
 So, I resorted to laser cutting and re-iterated.
 
 ![bezel2](img/bezel2.jpg)
+
+In retrospect, I need to put some tolerance in the design, because it takes some squeezing in to set the bezel.
