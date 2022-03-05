@@ -97,7 +97,7 @@ I already knew which spearers I was going to use. I had a spare Creative T5400 l
 
 ![speakers](img/speakers.jpeg)
 
-What did change since then was that I ramped up on the 3D modelling skils and I also got a 3D printer in the meantime. So, given some very nice 3D model of the speakers, I designed routing templates and holders for the speakers. The nice thing with these speakers is that the cloth in front is mounted through 4 insert slots to the main body and can come apart. So I designed to actually bring the speaker surface between them and install in the cabinbet. Some 3D printing and routing later I ended up with the following result.
+What did change since then was that I ramped up on the 3D modelling skils and I also got a 3D printer in the meantime. So, given some very nice 3D model of the speakers, I designed routing templates and holders for the speakers. The nice thing with these speakers is that the cloth in front is mounted through 4 insert slots to the main body and can come apart. So I designed to actually bring the speaker surface between them and install in the cabinbet. Some 3D printing and routing later I ended up with the following result, of which I am super happy.
 
 ![speaker_installation](img/speaker_installation.jpg)
 
@@ -108,3 +108,35 @@ I would then drill holes, with a new template, to install the cloth piece.
 With every part in place so far, I was able to check the whole thing out.
 
 ![complete](img/complete.jpg)
+
+### Monitor bezel
+
+The CRT should not just hang there in the void. There is supposed to be a bezel that makes the TV appear as integrated with the rest. I left this step for after the pre-integration, because it is the most error prone, as it heavily depends on the pre-integration state and deviation from any planning. E.g. I did not plan *exactly* where the CRT would end up, because I have no accurate 3D model of it.
+
+The process I followed to create the bezel is based on the following assumptions:
+- The tube is perpendicular to the support surface
+- The tube is a section of a sphere, i.e. there is a single radius that describes all curvatures
+
+The assumptions imply that if I got the geometry right I could apply a symmetric bezel that would stay parallel with the lines of the cabinet.
+
+To measure the tube I employed a special jig which I had bought exactly for that purpose and which I should have bought so many years already.
+
+![profile_jig](img/profile_jig.png)
+
+The principle of the jig is that you push it against some profile you want to copy and then you get it on the back side. This is what I did with the TV. I pushed it several times and at several angles against the tube, got the profiles back, put them on paper, measure them and then try to estimate the average radius all the curves corresponded to. I also tape measured the borders of the crt, to figure out the section angles.
+
+![curves](img/curves.jpg)
+
+I then went back to Fusion 360, set-up a sphere for the average angle, applied the section measurements and got a proxy of the tube geometry. Since I had decided I would make the bezel from 4mm mdf, I extruded the edges of the proxy by a certain amount to get the bezel geometry. I converted it to a 4mm shell (cut hollow) and then split into parts I could cut.
+
+![bezel_design](img/bezel_design.png)
+
+I would cut the parts and glue them together, so, I also 3D printed a jig to hold them in place (the white part in the image).
+
+The initial effort was to print templates and jigsaw them. However, my jigsaw-fu was not strong enough to generate a perfect bezel. I still got close enough.
+
+![bezel1](img/bezel1.jpg)
+
+So, I resorted to laser cutting and re-iterated.
+
+![bezel2](img/bezel2.jpg)
