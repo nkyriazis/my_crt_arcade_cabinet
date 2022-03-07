@@ -85,11 +85,21 @@ Apart from the hole issues, there was some t-mold slot cutting and sanding that 
 
 ![controlpanel](img/control_panel.jpg)
 
-I will be redoing the control panel carpentry, so, more on that to come.
+My OCD did not allow me to stick with this control panel, so I redid it, the right way. I sent the plans for cutting out the holes, and also some milling to allow room for the parts underneath, to the cnc cutter.
+
+![control_panel_plan](img/control_panel_plan.png)
+
+Since I was going to paint it, anyway, I also got a piece of plexiglass to match and act as cover. The idea would be that I would easily sandwich some art between the wood and the plexiglass, which I could easily swap for another if bored. The final thing looked like this. Sick, right?
+
+![final_control_panel](img/final_control_panel.jpg)
 
 On the electronics side, I installed all the parts and the wiring. I also installed three hinges to allow for the control panel to be opened in a well structured fashion. I feared I needed some kind of lock so that the door would not open accidentally, but I was glad to realize that it would be an overkill, as the weight of the door itself and the pressure being applied during gaming would never allow it. The only requirement is that the hinges are sturdy so that there is no planar motion.
 
-![joysticks_installed](img/joysticks_installed.jpg) 
+![joysticks_installed](img/joysticks_installed.jpg)
+
+You might notice the cut outs in the side parts. This was due to an error of mine. I spread the joysticks a bit further apart, and I theoretically did it with collisions underneath into consideration. In practice, the leftmost joystick and rightmost button hit on the sides, so I had to route some parts off. And it worked. I have this neat automation in Fusion 360, where I redistribute the joystick placements with some mouse drags.
+
+![joystick_placement](img/joystick_placement.png)
 
 ### Speakers
 
@@ -142,3 +152,15 @@ So, I resorted to laser cutting and re-iterated.
 ![bezel2](img/bezel2.jpg)
 
 In retrospect, I need to put some tolerance in the design, because it takes some squeezing in to set the bezel.
+
+I measured the distances to to the sides and cut a big hole in the middle leaving some room. I then marked the joining areas from the inside and recut the hole, so that this time there's also a couple of milimieters overhang. This way a perfect cut would hide any imperfections underneath. 
+
+![prebezel](img/prebezel.jpg)
+
+After some wood glueing and other means of securing, I spray painted the bezel and also spray lacquered it, to make it more robust and give it a plasticky look'n'feel. I love the final result.
+
+![bezel_final](img/bezel_final.jpg)
+
+What I love is how the bezel reflects the screen contents.
+
+![bezel_showoff](img/bezel_showoff.jpg)
